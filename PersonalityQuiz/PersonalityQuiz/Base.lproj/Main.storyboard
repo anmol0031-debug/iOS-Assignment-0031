@@ -64,15 +64,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hKB-Tc-bj0" firstAttribute="bottom" secondItem="hbh-Gr-Pdc" secondAttribute="bottom" constant="20" id="6Oo-NO-5w6"/>
-                            <constraint firstItem="hhq-yq-8iW" firstAttribute="leading" secondItem="hKB-Tc-bj0" secondAttribute="leading" constant="16" id="7qv-R5-T6p"/>
+                            <constraint firstItem="hhq-yq-8iW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hKB-Tc-bj0" secondAttribute="leading" id="7qv-R5-T6p"/>
                             <constraint firstItem="hKB-Tc-bj0" firstAttribute="bottom" secondItem="oXn-jh-de0" secondAttribute="bottom" constant="20" id="NaV-cn-tpN"/>
                             <constraint firstItem="hKB-Tc-bj0" firstAttribute="trailing" secondItem="hbh-Gr-Pdc" secondAttribute="trailing" constant="16" id="Nnq-g7-DDd"/>
-                            <constraint firstItem="hKB-Tc-bj0" firstAttribute="trailing" secondItem="9ES-D2-ES7" secondAttribute="trailing" constant="16" id="RJh-P1-7or"/>
-                            <constraint firstItem="oXn-jh-de0" firstAttribute="leading" secondItem="hKB-Tc-bj0" secondAttribute="leading" constant="16" id="RbV-iM-90o"/>
+                            <constraint firstItem="oXn-jh-de0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hKB-Tc-bj0" secondAttribute="leading" id="RbV-iM-90o"/>
                             <constraint firstItem="Ri7-cg-xQe" firstAttribute="centerX" secondItem="Avb-FA-6ci" secondAttribute="centerX" id="UFa-7S-eBC"/>
                             <constraint firstItem="hhq-yq-8iW" firstAttribute="top" secondItem="hKB-Tc-bj0" secondAttribute="top" id="W0e-CI-DD3"/>
                             <constraint firstItem="hKB-Tc-bj0" firstAttribute="trailing" secondItem="9ES-D2-ES7" secondAttribute="trailing" constant="20.5" id="Wcr-Ij-4C5"/>
+                            <constraint firstItem="hbh-Gr-Pdc" firstAttribute="leading" secondItem="oXn-jh-de0" secondAttribute="trailing" constant="280" id="Zb7-fm-4Hy"/>
                             <constraint firstItem="Ri7-cg-xQe" firstAttribute="centerY" secondItem="Avb-FA-6ci" secondAttribute="centerY" id="cX1-eq-jr2"/>
+                            <constraint firstItem="9ES-D2-ES7" firstAttribute="leading" secondItem="hhq-yq-8iW" secondAttribute="trailing" constant="275.66666666666669" id="diw-DN-NTj"/>
                             <constraint firstItem="9ES-D2-ES7" firstAttribute="top" secondItem="hKB-Tc-bj0" secondAttribute="top" id="muc-pe-vOH"/>
                         </constraints>
                     </view>
@@ -134,31 +135,31 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PUQ-oA-nb4" userLabel="Single Answer Stack View">
-                                <rect key="frame" x="0.0" y="311" width="402" height="180"/>
+                                <rect key="frame" x="16" y="311" width="386" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFR-gL-6Te" userLabel="Single Button1">
-                                        <rect key="frame" x="0.0" y="0.0" width="402" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DHe-5O-EJy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2L-P5-A6X" userLabel="Single Button2">
-                                        <rect key="frame" x="0.0" y="50" width="402" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="386" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGp-Sl-IQ0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVZ-h3-WUX" userLabel="Single Button 3">
-                                        <rect key="frame" x="0.0" y="100" width="402" height="30"/>
+                                        <rect key="frame" x="0.0" y="100" width="386" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUN-gy-3ld"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv2-Tk-XYG" userLabel="Single Button4">
-                                        <rect key="frame" x="0.0" y="150" width="402" height="30"/>
+                                        <rect key="frame" x="0.0" y="150" width="386" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="singleAnswerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0j-Mp-3u0"/>
@@ -240,7 +241,6 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PUQ-oA-nb4" secondAttribute="trailing" id="4SL-7b-XbB"/>
                             <constraint firstAttribute="trailing" secondItem="Viv-Bv-OK8" secondAttribute="trailing" id="AAW-mC-2z0"/>
-                            <constraint firstItem="PUQ-oA-nb4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EdT-B0-KPS"/>
                             <constraint firstItem="vKP-B5-XFl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NTw-Uy-ZjH"/>
                             <constraint firstItem="vKP-B5-XFl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QDQ-3O-PhM"/>
                             <constraint firstItem="Lh5-ps-7XC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VIK-gj-Mf8"/>
